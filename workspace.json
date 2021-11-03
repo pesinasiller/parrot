@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "parrot": "apps/parrot",
+    "parrot-e2e": "apps/parrot-e2e"
+  }
+}
