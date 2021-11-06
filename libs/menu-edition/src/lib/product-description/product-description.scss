@@ -1,0 +1,16 @@
+.product-description {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  &__image {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+  }
+  &__info {
+    width: 40%;
+  }
+}

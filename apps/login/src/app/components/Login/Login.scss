@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F04E4A;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  &__error {
+    color: red;
+  }
+  &__form {
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    div {
+      padding: 10px;
+    }
+    button {
+      background-color: black;
+    }
+    button:hover {
+      background-color: gray;
+    }
+  }
+
+}
