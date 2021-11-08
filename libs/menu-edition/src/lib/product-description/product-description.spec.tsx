@@ -38,7 +38,7 @@ describe('ProductDescription', () => {
     console.log(prettyDOM(baseElement))
     expect(baseElement).toBeTruthy();
 
-    const nameDiv = screen.queryAllByText('Combo Amigos - COPIA');
+    const nameDiv = screen.queryAllByText(productMock.name);
     expect(nameDiv).toHaveLength(1)
   });
 });

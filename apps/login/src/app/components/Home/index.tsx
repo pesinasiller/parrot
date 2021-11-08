@@ -8,7 +8,5 @@ export default function Home() {
   if (!authenticated) {
     history.push('/login');
   }
-  return (
-    <MenuEdition />
-  );
+  return <MenuEdition />;
 }

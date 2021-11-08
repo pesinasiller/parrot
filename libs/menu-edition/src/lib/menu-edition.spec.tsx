@@ -42,10 +42,9 @@ describe('MenuEdition', () => {
 
   it('should render successfully', async () => {
     axios.get = jest.fn().mockResolvedValue(mockData);
-    useSelectorMock.mockReturnValue(() => Promise.resolve({token: JSON.stringify("test")}))
+    useSelectorMock.mockReturnValue(() => Promise.resolve({token: JSON.stringify("test")}));
     const { baseElement } = render(<MenuEdition />);
     console.log(prettyDOM(baseElement))
     expect(baseElement).toBeTruthy();
-
   });
 });

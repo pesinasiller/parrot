@@ -41,7 +41,6 @@ export const createInterceptors = () => {
           const access = JSON.stringify(responseData.data.access);
           const refresh = JSON.stringify(responseData.data.refresh)
           setTokens(access, refresh);
-          axios.defaults.headers.common['Authorization'] = `Bearer ${JSON.parse(access)}`;
           originalRequest.headers['Authorization'] = `Bearer ${JSON.parse(access)}`;
           return axios(originalRequest);
         }).catch((error) => {
